@@ -1,0 +1,10 @@
+{
+    "name": "ageofquardones",
+
+    "projects": [
+        {
+            "name": "NeoQuad",            
+            "files": [ { "directory": "NeoQuad", "filters": ["*.cpp", "*.h"] } ]
+        }
+    ]
+}

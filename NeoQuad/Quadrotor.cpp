@@ -5,15 +5,15 @@
 
 
 Quadrotor::Quadrotor()
-	{
-	  axisLength = 20;
-	  rotationSpeed = 5;
+{
+	axisLength = 20;
+	rotationSpeed = 5;
 	  
-	  rotationAngleX = 0;
-	  rotationAngleY = 0;
-	  rotationAngleZ = 0;
-		quadricObj = gluNewQuadric();
-	}
+	rotationAngleX = 0;
+	rotationAngleY = 0;
+	rotationAngleZ = 0;
+	quadricObj = gluNewQuadric();
+}
 void Quadrotor::drawAxes()
 {
 	glPushMatrix();
@@ -33,7 +33,6 @@ void Quadrotor::rotateDisplay(int value)
 	rotationAngleY += (rotationAngleY > 360) ? -358 : 2;
 	//glutTimerFunc(rotationSpeed, &Quadrotor::rotateDisplay, 0);
 	glutPostRedisplay();
-	
  
 }
 
